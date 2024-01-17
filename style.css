@@ -27,6 +27,16 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
 /* reset code and common ends here */
 
 /* navbar starts here */
@@ -79,6 +89,24 @@ nav{
     font-size: 2rem;
 }
 /* navbar ends here */
+
+/* footer starts here */
+.footer{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+    margin-left: -5px;
+}
+.footer-input{
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+}
+/* footer ends here */
 
 @media screen and (max-width: 992px) {
     .flex-space-around{
