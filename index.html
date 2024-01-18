@@ -71,8 +71,275 @@
 
     <!-- header ends here -->
 
-    <main>
-        <h2>Home page</h2>
+    <main class="flex-center">
+        <div class="sidebar">
+            <section class="categories-section">
+              <h3 class="section-title">Categories</h3>  
+              <ul class="list">
+                <li class="list-item">
+                    <label for="phone">
+                        <input type="checkbox" name="phone" id="phone" value="phone">
+                        Phone
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="tablets">
+                        <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                        Tablets
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="televisions">
+                        <input type="checkbox" name="televisions" id="televisions" value="televisions">
+                        Televisions
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="computers">
+                        <input type="checkbox" name="computers" id="tcomputers" value="computers">
+                        Computers
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="headphones">
+                        <input type="checkbox" name="headphones" id="headphones" value="headphones">
+                        Headphones
+                    </label>
+                </li>
+              </ul>
+            </section>
+
+            <section class="price-section">
+              <h3 class="section-title">Price Range</h3>  
+              <ul class="list">
+                <li class="list-item">
+                    <label for="price1">
+                        <input type="radio" name="price" id="price1" value="[0,20]">
+                        $0-$20
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="price2">
+                        <input type="radio" name="price" id="price2" value="[21,50]">
+                        $21-$50
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="price3">
+                        <input type="radio" name="price" id="price3" value="[51,100]">
+                        $51-$100
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="price4">
+                        <input type="radio" name="price" id="price4" value="[101,500]">
+                        $101-$500
+                    </label>
+                </li>
+                <li class="list-item">
+                    <label for="price5">
+                        <input type="radio" name="price" id="price5" value="[501+]">
+                        $501+
+                    </label>
+                </li>
+                
+              </ul>
+            </section>
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping Options</h3>  
+                <ul class="list">
+                  <li class="list-item">
+                      <label for="free">
+                          <input type="radio" name="shipping" id="free" value="free">
+                          Free
+                      </label>
+                  </li>
+                  <li class="list-item">
+                      <label for="paid">
+                          <input type="radio" name="shipping" id="paid" value="paid">
+                          Paid
+                      </label>
+                  </li>
+                </ul>
+            </section>
+            
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions-sort">
+                    <label for="sort">Sort By: </label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest discount first</option>
+                    </select>
+                </div>
+                <div class="actions-search">
+                    <input type="text" placeholder="Search product">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </div>
+            </section>
+            <!-- product section starts here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product1.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product2.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product3.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product1.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product1.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 in sold</span>
+                    </div>
+                    <img class="product-img" src="images/product1.jpg" alt="product1">
+                    <div class="product-body">
+                        <h3 class="product-name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam tempore voluptatem. Dolorum, repudiandae... <a href="product.html" class="learn-more" >Learn more</a>
+                        </p>
+                        <h4 class="product-price">$225.99</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn product-button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+            <div class="pagination">
+                <button class="btn pagination-btn">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn pagination-btn">2</button>
+                <button class="btn pagination-btn">3</button>
+                <button class="btn pagination-btn">4</button>
+                <button class="btn pagination-btn">5</button>
+                <button class="btn pagination-btn">6</button>
+                <button class="btn pagination-btn">7</button>
+                <button class="btn pagination-btn">8</button>
+                <button class="btn pagination-btn">9</button>
+                <button class="btn pagination-btn">10</button>
+                <button class="btn pagination-btn">...</button>
+                <button class="btn pagination-btn">50</button>
+                <button class="btn pagination-btn">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+            <!-- product sections ends here -->
+        </div>
     </main>
 
     <!-- footer starts here -->
